@@ -1,0 +1,3 @@
+the main directory holds all working applications (.exe) for app keybinds i have
+created. if you want to find the controls and additional functionality please 
+head to the respective branch and see the documentation file there before deciding something doesn't work. this will tell you what the code does and the limitations it has along with any updates i commit later on.
