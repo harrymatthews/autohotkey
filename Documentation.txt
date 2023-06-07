@@ -1,0 +1,48 @@
+when testing to create keybinds for spotify there were some key issues that arose.
+the final version, named "spotify keybinds.exe", which is located on the main
+branch contains different methods to achieving the desired result.
+
+
+
+- WinActivate appears to not work after using the command "run" to open the
+application and when hiding/showing the window. this results in the 
+controlfocus and controlsend not working. to resolve this a left click is performed
+after each function which allows the control functions to work (using the MouseClick
+function)
+
+note. if the left click performed is on the spotify window this will also cause
+the control functions to not go through in which a manual click from the mouse 
+elsewhere will fix the issue.
+
+- WinMinimize and WinMaximize have similar problems and in the previous testing
+either had no functionality or only partially worked. the solution was to use WinHide
+and WinShow.
+
+- WinExist caused further issues coupled with the prior problems. this solution was
+inspired and implemented from user - jcsteh on github
+
+
+
+the code is a current working version based on user - jcsteh/SpotifyGlobalKeys.ahk
+code. the code uses ahk version is the 1.1.36.02 so i recommend any adjustments/
+improvements made be set to the same
+
+if you have any issues pop a question and i will try and answer as best as i can
+with my limited knowledge/experience using this langauge. also, im trying to implement 
+some additonal features and reliability fixes so will update once done
+
+
+the controls:
+- play/pause = CTRL + ALT + DOWN (arrow key)
+- next song = CTRL + ALT + RIGHT (the plusses indicates three buttons pushed together)
+- previous song = CTRL + ALT + LEFT
+- hide/show window = CTRL + ALT + UP
+- run spotify = CTRL + ALT + p (needs to be run first before doing other functions)
+
+additional functionality:
+- all controls work while the window is not on screen
+- if on multiple desktops and want to move the spotify window to each one follow these 
+steps:
+1) minimise the window using CTRL + ALT + UP
+2) switch desktop using WIN + LEFT/RIGHT (arrow key)
+3) repeat step one and it should show up 
