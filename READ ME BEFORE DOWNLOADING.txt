@@ -1,1 +1,1 @@
-each branch contains: testing with a commit message associating it with a version, a .ahk/.exe file for working version(s) that have been created, a documentation file explaining how to use the keybinds plus any additional information you might need
+each branch contains: testing with a commit message associating it with a version, a .ahk/.exe file for working version(s) that have been created, a documentation and control file(s) explaining how to use the keybinds plus any additional information you might need

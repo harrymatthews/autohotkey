@@ -2,7 +2,7 @@ when testing to create keybinds for spotify there were some key issues that aros
 the final version, named "spotify keybinds.exe", which is located on the main
 branch contains different methods to achieving the desired result.
 
-
+########################################################################################
 
 - WinActivate appears to not work after using the command "run" to open the
 application and when hiding/showing the window. this results in the 
@@ -21,7 +21,7 @@ and WinShow.
 - WinExist caused further issues coupled with the prior problems. this solution was
 inspired and implemented from user - jcsteh on github
 
-
+########################################################################################
 
 the code is a current working version based on user - jcsteh/SpotifyGlobalKeys.ahk
 code. the code uses ahk version is the 1.1.36.02 so i recommend any adjustments/
@@ -30,4 +30,3 @@ improvements made be set to the same
 if you have any issues pop a question and i will try and answer as best as i can
 with my limited knowledge/experience using this langauge. also, im trying to implement 
 some additonal features and reliability fixes so will update once done
-
