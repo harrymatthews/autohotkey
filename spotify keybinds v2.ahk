@@ -16,7 +16,7 @@ press_spotify_key(key_pressed) {
     return 
 }
 
-^+Numpad0:: 
+^!Numpad0:: 
 {
     spotify_handle := get_spotify_handle()
 
@@ -33,7 +33,7 @@ press_spotify_key(key_pressed) {
     return
 }
 
-^+Up:: 
+^!Up:: 
 {
     spotify_handle := get_spotify_handle()
     winget, spotify_style, style, ahk_id %spotify_handle%
@@ -49,19 +49,19 @@ press_spotify_key(key_pressed) {
     return
 }
 
-^+Down:: 
+^!Down:: 
 {
     press_spotify_key("{Space}")
     return
 }
 
-^+Right:: 
+^!Right:: 
 {
     press_spotify_key("^{Right}")
     return
 }
 
-^+Left:: 
+^!Left:: 
 {
     press_spotify_key("^{Left}")
     return 
