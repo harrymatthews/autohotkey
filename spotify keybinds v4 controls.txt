@@ -1,0 +1,16 @@
+the controls:
+- play/pause = CTRL + ALT + DOWN (arrow key)
+- next song = CTRL + ALT + RIGHT (recommend pressing buttons in this order)
+- previous song = CTRL + ALT + LEFT 
+- hide/show the window = CTRL + ALT + UP 
+- run/close spotify = CTRL + ALT + Numpad0
+- like song = CTRL + ALT + Z
+- currently playing = CTRL + ALT + \
+
+additional functionality:
+- all controls work while the window is not on screen
+- if on multiple desktops and want to move the spotify window to each one follow these 
+steps:
+1) minimise the window using CTRL + ALT + UP
+2) switch desktop using WIN + LEFT/RIGHT (arrow key)
+3) repeat step one and it should show up 
