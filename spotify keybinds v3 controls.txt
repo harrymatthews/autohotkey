@@ -4,6 +4,7 @@ the controls:
 - previous song = CTRL + ALT + LEFT 
 - hide/show the window = CTRL + ALT + UP 
 - run/close spotify = CTRL + ALT + Numpad0
+- like song = CTRL + ALT + Z
 
 additional functionality:
 - all controls work while the window is not on screen
