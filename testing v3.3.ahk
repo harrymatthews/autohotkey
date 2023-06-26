@@ -4,40 +4,45 @@ SetWorkingDir, %A_ScriptDir%
 
 DetectHiddenWindows, On
 
-spotify_class := Chrome_RenderWidgetHostHWND1
-return
-
 get_spotify_handle() {
     winget, spotify_handle, ID, ahk_exe Spotify.exe
     return spotify_handle
 }
 
-get_window_focus() {
-    spotify_handle := get_spotify_handle()
-    controlfocus, %spotify_class%, ahk_id %spotify_handle%
-    return
-}
-
 press_spotify_key(key_pressed) {
     spotify_handle := get_spotify_handle()
+    spotify_class := Chrome_RenderWidgetHostHWND1
     controlfocus, %spotify_class%, ahk_id %spotify_handle%
     controlsend, %spotify_class%, %key_pressed%, ahk_id %spotify_handle%
     return 
 }
 
+^!Numpad0:: 
+{
+    spotify_handle := get_spotify_handle()
+    if winexist("ahk_id" spotify_handle) {
+        winclose
+    }
+    else {
+        run, "C:\Users\HarrisonMatthews\AppData\Local\Microsoft\WindowsApps\Spotify.exe"
+        sleep, 500
+        mouseclick, left
+    }
+    return
+}
 
 ^!Up:: 
 {
     spotify_handle := get_spotify_handle()
-    winget, state, MinMax, ahk_id %spotify_handle%
+    winget, spotify_style, style, ahk_id %spotify_handle%
 
-    if (state = 1) {
+    if (spotify_style & 0x10000000) {
         winhide, ahk_id %spotify_handle%
-        get_window_focus()
+        mouseclick, left
     }
     else {
         winshow, ahk_id %spotify_handle%
-        get_window_focus()
+        mouseclick, left
     }
     return
 }
@@ -47,4 +52,18 @@ press_spotify_key(key_pressed) {
     press_spotify_key("{Space}")
     return
 }
+
+^!Right::
+{
+    press_spotify_key("^{Right}")
+    return
+}
+
+^!Left::
+{
+    press_spotify_key("^{Left}")
+    return
+}
+
+
 
