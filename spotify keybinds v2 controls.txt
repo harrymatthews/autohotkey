@@ -1,9 +1,9 @@
 the controls:
-- play/pause = CTRL + SHIFT + DOWN (arrow key)
-- next song = CTRL + SHIFT + RIGHT (recommend pressing buttons in this order)
-- previous song = CTRL + SHIFT + LEFT 
-- hide/show the window = CTRL + SHIFT + UP 
-- run/close spotify = CTRL + SHIFT + Numpad0
+- play/pause = CTRL + ALT + DOWN (arrow key)
+- next song = CTRL + ALT + RIGHT (recommend pressing buttons in this order)
+- previous song = CTRL + ALT + LEFT 
+- hide/show the window = CTRL + ALT + UP 
+- run/close spotify = CTRL + ALT + Numpad0
 
 additional functionality:
 - all controls work while the window is not on screen
