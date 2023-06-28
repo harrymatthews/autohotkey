@@ -67,3 +67,4 @@ press_spotify_key(key_pressed)
     press_spotify_key("^{Right}")
     Return
 }
+

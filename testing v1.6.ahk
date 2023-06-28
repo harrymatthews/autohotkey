@@ -38,4 +38,3 @@ spotify_key(key_pressed)
     spotify_key("^{Right}")
     Return
 }
-

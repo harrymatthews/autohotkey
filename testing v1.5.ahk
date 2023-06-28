@@ -11,5 +11,3 @@ spotify_key(key_pressed) {
     ControlSend, , %key_pressed%, ahk_id %spotify_handle%
     return 
 }
-
-

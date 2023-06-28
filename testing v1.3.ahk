@@ -12,3 +12,4 @@ WinGet, spotify, ID, ahk_class SpotifyMainWindow
     WinActivate, ahk_id %spotify%
     Return
 }
+

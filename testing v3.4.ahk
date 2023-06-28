@@ -75,3 +75,4 @@ open_close_spotify() {
     press_spotify_key("^{Left}")
     return
 }
+
