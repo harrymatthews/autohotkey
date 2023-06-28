@@ -31,6 +31,20 @@ show_spotify_window() {
     return
 }
 
+^!Numpad0:: 
+{
+    spotify_handle := get_spotify_handle()
+    if winexist("ahk_id" spotify_handle) {
+        winclose
+    }
+    else {
+        run, "C:\Users\HarrisonMatthews\AppData\Local\Microsoft\WindowsApps\Spotify.exe"
+        sleep, 500
+        mouseclick, left
+    }
+    return
+}
+
 ^!z::
 {
     press_spotify_key("!+{b}")
