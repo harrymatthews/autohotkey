@@ -1,11 +1,15 @@
 when testing to create keybinds for spotify there were some key issues that arose.
-the final version, named "spotify keybinds.exe", which is located on the main
-branch contains different methods to achieving the desired result.
+any script/executable file in the working versions folder will work, but best to check
+the controls folder and find the corresponding file to see what features it has. 
+i recommned using the latest version as it might include:
+- imporvements to reliability/cleaner code
+- more features 
 
-########################################################################################
+######################################################################################
 
-- WinActivate appears to not work after using the command "run" to open the
-application and when hiding/showing the window. this results in the 
+few things i ran into when developing the scripts:
+
+- WinActivate appears to not work after using the command "run" (or just in general) to open the application and when hiding/showing the window. this results in the 
 controlfocus and controlsend not working. to resolve this a left click is performed
 after each function which allows the control functions to work (using the MouseClick
 function)
@@ -21,7 +25,7 @@ and WinShow.
 - WinExist caused further issues coupled with the prior problems. this solution was
 inspired and implemented from user - jcsteh on github
 
-########################################################################################
+######################################################################################
 
 the code is a current working version based on user - jcsteh/SpotifyGlobalKeys.ahk
 code. the code uses ahk version is the 1.1.36.02 so i recommend any adjustments/
